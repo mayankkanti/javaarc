@@ -12,8 +12,6 @@
 //	}
 //
 //}
-
-// idk what this questions means, im assuming they need me to input 2 ints thru command line and add the sum?....?!?!?
 public class CLQ3 {
 
 	public static void main(String[] args) {

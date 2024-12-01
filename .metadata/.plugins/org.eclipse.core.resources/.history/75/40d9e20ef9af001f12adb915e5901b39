@@ -14,5 +14,10 @@ public class CLQ5 {
 		int mid= (a+b+c)-(max+min);
 		
 		System.out.println("Ascending Order of the inputted Number is: "+min+" "+mid+" "+max);
+		
+
+
+
+		
 	}
 }
