@@ -1,0 +1,11 @@
+/* Write a java program that takes two int values from the command line as dividend and divisor 
+and print the quotient and remainder */
+public class CLQ1 {
+
+	public static void main(String[] args) {
+		double arg1 = Double.parseDouble(args[0]);
+		String arg2 = args[1];
+		int arg3 = Integer.parseInt(args[0]);
+		System.out.println(arg1 +". "+arg2+" having roll no "+arg3);
+	}
+}

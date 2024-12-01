@@ -1,0 +1,12 @@
+
+public class CLQ3 {
+
+	public static void main(String[] args) {
+		int max, min;
+		max = 6;
+		min = 0;
+		System.out.println(Math.random()*(max - min + 1) + min);
+
+	}
+
+}
