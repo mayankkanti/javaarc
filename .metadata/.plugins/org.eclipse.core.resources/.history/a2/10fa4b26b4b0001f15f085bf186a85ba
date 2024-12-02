@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Q6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int units = input.nextInt();
+		if (units <= 50) {
+			System.out.println("Your Monthly Electric Bill is " + (units * 3));
+		} else if (units > 50 && units <= 200) {
+			System.out.println("Your Monthly Electric Bill is " + (units * 4.80));
+		} else if (units > 200 && units <= 400) {
+			System.out.println("Your Monthly Electric Bill is " + (units * 5.80));
+		} else if (units > 400) {
+			System.out.println("Your Monthly Electric Bill is " + (units * 6.20));
+		}
+	}
+
+}

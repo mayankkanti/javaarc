@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Q7 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int units; // user input
+		double total, discount, payable; // vars
+		
+		
+		System.out.println("No. of units consumed: ");
+		units = input.nextInt();
+		System.out.println("Do you want to pay online(y/n):");
+		String choice = input.next();
+		
+		if (units <= 50) {
+			total = 50*3;
+			System.out.println("Total Amount: "+total);
+		} else if (units <= 200) {
+			total = 50*4.80;
+			System.out.println("Total Amount: "+total);
+		} else if (units <= 400) {
+			total = 50*5.80;
+			System.out.println("Total Amount: "+total);
+		} else if (units > 500) {
+			total = 50*6.20;
+			System.out.println("Total Amount: "+total);
+		}
+		input.close();
+	}	
+
+}
