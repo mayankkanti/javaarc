@@ -1,0 +1,14 @@
+
+public class HAQ6 {
+
+	public static void main(String[] args) {
+		String x = "H";
+		if (x=="H") {
+			System.out.println("yes");
+		} else {
+			System.out.println("no");
+		}
+
+	}
+
+}

@@ -7,7 +7,7 @@ public class Q6 {
 		System.out.println("Enter the units consumed: ");
 		int units = input.nextInt();
 		if (units <= 50) {
-			System.out.println("Your Monthly Electric Bill is " + (units * 3) + " for " + units + " at 3rs per unit");
+			System.out.println("  t");
 		} else if (units > 50 && units <= 200) {
 			System.out.println(
 					"Your Monthly Electric Bill is " + (units * 4.80) + " for " + units + " at 4.80rs per unit");

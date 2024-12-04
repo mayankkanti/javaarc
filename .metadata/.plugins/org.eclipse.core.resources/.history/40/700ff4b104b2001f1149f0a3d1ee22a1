@@ -1,0 +1,12 @@
+
+public class HAQ3 {
+
+	public static void main(String[] args) {
+		int max = 12, min = 1, randomNum;
+		for (int i = 0; i < 100; i++) {
+			randomNum = (int) (Math.random()*(max - min + 1)+min);
+			System.out.println(randomNum);
+		}
+	}
+
+}
