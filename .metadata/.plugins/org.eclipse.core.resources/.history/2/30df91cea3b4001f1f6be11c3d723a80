@@ -5,7 +5,7 @@ public class Q5 {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Input the year: ");
 		int userinput = input.nextInt();
-		if (userinput % 4 == 0 && userinput % 100 != 0 || userinput % 400 == 0) {
+		if (userinput%4 == 0) {
 			System.out.println(userinput+" is a leap year: true");
 		}
 		else {
