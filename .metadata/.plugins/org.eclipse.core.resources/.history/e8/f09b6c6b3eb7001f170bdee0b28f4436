@@ -4,8 +4,8 @@ public class Q10 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int marks = input.nextInt(); // Assuming that the users enter correct marks every time
-		int condition = marks / 10;  
+		int marks = input.nextInt();
+		int condition = marks / 10;
 
 		switch (condition) {
 		case 10:
@@ -39,8 +39,3 @@ public class Q10 {
 	}
 
 }
-
-/*
-78
-Grade B
- */
