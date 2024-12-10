@@ -19,3 +19,15 @@ public class Q3 {
         }
 	}
 }
+
+
+
+/*
+ * Input first number: 
+ * 23 
+ * Input second number: 
+ * 25 
+ * Input third number 
+ * 26
+ * Increasing
+ */

@@ -28,3 +28,10 @@ public class Q8 {
 	}
 
 }
+
+
+/*
+Enter x-coordinate: -34
+Enter y-coordinate: 4.5
+(-34.0,4.5) is in quadrant II.
+ */

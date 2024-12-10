@@ -9,3 +9,9 @@ public class Q1 {
 		}
 	}
 }
+/* 
+ * 
+ * Enter Your Age (int): 
+ * 19 
+ * You are eligible to cast your vote.
+ */

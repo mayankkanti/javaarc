@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 public class Q5 {
 
 	public static void main(String[] args) {
@@ -14,3 +14,9 @@ public class Q5 {
 	}
 
 }
+
+/*
+ * Input the year: 
+ * 2012 
+ * 2012 is a leap year: true
+ */

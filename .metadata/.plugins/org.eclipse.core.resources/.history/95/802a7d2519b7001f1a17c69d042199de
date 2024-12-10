@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Q6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the units consumed: ");
+		int units = input.nextInt();
+		if (units <= 50) {
+			System.out.println("  t");
+		} else if (units > 50 && units <= 200) {
+			float bill = (float) (units * 3.0);
+			System.out.println(
+					"Your Monthly Electric Bill is " + bill + " for " + units + " at 4.80rs per unit");
+		} else if (units > 200 && units <= 400) {
+			float bill = (float) (50*3.0+(units-50)*4.80);
+			System.out.println(
+					"Your Monthly Electric Bill is " + bill + " for " + units + " at 5.80rs per unit");
+		} else if (units > 400) {
+			float bill = (float) (units * 4.80);
+			System.out.println(
+					"Your Monthly Electric Bill is " + bill + " for " + units + " at 6.20rs per unit");
+		}
+	}
+
+}

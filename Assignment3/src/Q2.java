@@ -11,4 +11,12 @@ public class Q2 {
 			System.out.println("No, Alice is not following doctor’s advice");
 		}
 	}
-}
+}   
+
+
+/*
+ * Enter the amount of water (in ml) Alice drank today: 
+ * 5500 
+ * Yes, Alice is following doctor’s advice
+ */
+ 
