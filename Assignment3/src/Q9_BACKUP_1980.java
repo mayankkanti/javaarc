@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
 // This code didn't answer the question using if statements but it still functions
 
 /*

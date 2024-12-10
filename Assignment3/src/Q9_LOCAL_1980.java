@@ -1,17 +1,6 @@
-
-
-
-
-
-
-
-
 // This code didn't answer the question using if statements but it still functions
 
 /*
-=======
-// Wrong
->>>>>>> 659199bb0d89c7c7509bc39b01d7bf99d625210a
 import java.util.Scanner;
 public class Q9 {
 
