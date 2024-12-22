@@ -12,9 +12,9 @@ public class Q8 {
 		if (x == 0 && y == 0) {
 			System.out.println("(" + x + "," + y + ")" + " is at origin.");
 		} else if (x == 0) {
-			System.out.println("(" + x + "," + y + ")" + " is on x-axis.");
-		} else if (y == 0) {
 			System.out.println("(" + x + "," + y + ")" + " is on y-axis.");
+		} else if (y == 0) {
+			System.out.println("(" + x + "," + y + ")" + " is on x-axis.");
 		} else if (x > 0 && y > 0) {
 			System.out.println("(" + x + "," + y + ")" + " is in quadrant I.");
 		} else if (x < 0 && y > 0) {
