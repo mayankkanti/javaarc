@@ -6,9 +6,15 @@ public class ArmstrongNum {
 		System.out.print("Enter a number: ");
 		int num = sc.nextInt();
 		int newNum = 0, q=num, bit;
+        int digits = 0, temp = num;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
 		while (q!=0) {
 			bit = q%10;
-			newNum += Math.pow(bit,3);
+			newNum += Math.pow(bit,digits);
+			System.out.println(newNum);
 			q = q/10;
 		}
 		
