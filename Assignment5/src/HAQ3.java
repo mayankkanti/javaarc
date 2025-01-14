@@ -23,24 +23,25 @@ public class HAQ3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the angle (x): ");
 		double x = sc.nextDouble();
-		
+		x = x % (2 * Math.PI);
 		int n = 1;
 		double sum = 0;
 		int sign = 1;
 		
 		while (true){
 			// Calc factorial 
-			long factorial = 1;
-            for (int i = 1; i <= n; i++) {
-                factorial *= i;
-            }
+			double factorial = 1.0d;
+			for (double i = 1.0; i <= n; i++) {
+			    factorial *= i;
+			}
 			
             double term = sign * (Math.pow(x, n) / factorial);
             sum += term;
 			
-			System.out.printf("[Debug] x: %f n:%d factorial: %d term: %f sum: %f", x, n, factorial, term, sum);
+			System.out.printf("[Debug] x: %f n:%d factorial: %f term: %f sum: %f", x, n, factorial, term, sum);
 			System.out.println();
-						
+			
+			// termination condition
             if (Math.abs(term) < Math.pow(10, -6)) {
                 break;
             }
