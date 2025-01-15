@@ -8,13 +8,9 @@ sin(x) = x^1/1! + x^3/3! + x^5/5! + x^7/7! + ...
 i.e.
 sin(x) = x^1/1 + 
 
-
 simplifying we would get
 for n = 1
 
- 
- 
- 
 */
 import java.util.Scanner;
 public class HAQ3 {
@@ -23,7 +19,7 @@ public class HAQ3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the angle (x): ");
 		double x = sc.nextDouble();
-		x = x % (2 * Math.PI);
+		//x = x % (2 * Math.PI);
 		int n = 1;
 		double sum = 0;
 		int sign = 1;

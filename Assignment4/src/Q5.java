@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Q5 {
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		int n = input.nextInt();
@@ -17,12 +17,8 @@ public class Q5 {
 			System.out.println(n+" is not a prefect number.");
 		}
 	}
-
 }
-
-
 /*
 Enter a number: 496
 496 is a prefect number.
  */
-*/
