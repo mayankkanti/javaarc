@@ -8,15 +8,15 @@ public class Q10 {
 		int a = 0;
 		int b = 1;
 		int c = 1;
-		
+		System.out.print("The sequence till "+n+" is: "+a+" "+b+" "+c+" ");
 		for (int i=1; i<=(n-3); i++) {
 			// since we already know the first three terms so n-3
 			int temp = a + b + c;
+			System.out.print(temp+" ");
 			a = b;
 			b = c;
 			c = temp;
 		}
-		System.out.println("The "+n+"th term of this sequence is : "+c);
 
 	}
 
