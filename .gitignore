@@ -32,3 +32,6 @@ target/
 *.jar
 *.war
 *.ear
+
+# Eclipse workspace metadata
+.metadata/
