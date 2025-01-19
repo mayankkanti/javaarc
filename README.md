@@ -1,7 +1,8 @@
 # [JAVA-ARC] ICP Assignments Answers for first year.
 
 This repository contains solutions to ICP assignment questions. Each file represents the answer to a specific question provided in the assignments.
-p.s. if there are any mistakes in any of the answers please do submit a pull request!
+
+p.s. if there are any mistakes in any of the answers please do submit a pull request or raise an issue!
 
 ## File Structure
 
