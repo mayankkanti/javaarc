@@ -21,11 +21,11 @@ public class Q10 {
 				temp_size++;
 			}
 		}
-		
+
 		// or use int[] output = Arrays.copyOf(temp_arr, temp_size);
 		// https://www.datacamp.com/doc/java/copyof
 		// (but this without using arrays utils
-		
+
 		int[] output = new int[temp_size];
 		for (int i = 0; i < temp_size; i++) {
 			output[i] = temp_arr[i];

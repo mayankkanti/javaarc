@@ -19,7 +19,6 @@ public class Q2 {
 			System.out.println("The number " + num + " is not divisible by 9");
 		}
 	}
-
 }
 /*
 Enter a number: 123456

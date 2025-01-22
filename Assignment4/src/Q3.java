@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q3 {
+public class Q3 {   
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class Q3 {
 			randNum = (int) (Math.random() * (n) + 1);
 			System.out.print(randNum + " ");
 			sum += randNum;
-			count++;
+			count++; 
 		} while (count < n);
 		System.out.println();
 		System.out.println("Average of " + n + " random numbers are " + (sum / n));

@@ -8,7 +8,7 @@ public class Q4 {
 		System.out.print("Enter the second number: ");
 		int secondNum  = input.nextInt();
 		System.out.print("GCD of "+firstNum+" and "+secondNum+" is ");
-		while (secondNum != 0) {
+		while (secondNum != 0) { 
 			int temp = firstNum%secondNum;
 			firstNum = secondNum;
 			secondNum = temp;
