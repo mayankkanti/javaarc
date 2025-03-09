@@ -1,5 +1,5 @@
 package Assignments.SecondSemester.Assignment1;
-package lab_assignments;
+
 
 // got a better way to do this, but I'm too lazy to change it now
 

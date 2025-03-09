@@ -1,5 +1,4 @@
 package Assignments.SecondSemester.Assignment1;
-package lab_assignments;
 
 public class Q10 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-
+package Assignments.FirstSemester.Assignment2;
 /*
  * Author's Name: Mayank Kanti Mehta
  * Author's Redg No: 
@@ -15,7 +15,8 @@ public class Q1 {
 		System.out.print("Enter the temperature in F:");
 		f = sc.nextDouble();		
 		c = (f-32)*(5.0/9);
-		System.out.println("The temperature in C is "+c);	
+		System.out.println("The temperature in C is "+c);
+		sc.close();
 	}
 }
 

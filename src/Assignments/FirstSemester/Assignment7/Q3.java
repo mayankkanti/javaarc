@@ -21,7 +21,7 @@ public class Q3 {
 			}
 		}
 		System.out.println("The element "+n+" appeared "+count+(count>1?" times.":"time."));
-		
+		sc.close();
 	}
 
 }

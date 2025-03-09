@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment2;
+
 /*Write a java program to take three inputs from command line argument as principle, rate and
 time. Find Simple interest.*/
 public class HACLQ1 {

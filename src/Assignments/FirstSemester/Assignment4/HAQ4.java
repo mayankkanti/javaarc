@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class HAQ4 {
 	public static void main(String[] args) {
@@ -16,5 +17,6 @@ public class HAQ4 {
 		}
 		System.out.println("Sum of all even numbers = "+evensum);
 		System.out.println("Product of all odd numbers = "+oddproduct);
+		input.close();
 	}
 }

@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment2;
+
 
 public class CLQ4 {
 

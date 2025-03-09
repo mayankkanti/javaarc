@@ -49,7 +49,7 @@ public class HAQ2 {
 				break;
 			}
 		}
-
+		sc.close();
 	}
 
 }

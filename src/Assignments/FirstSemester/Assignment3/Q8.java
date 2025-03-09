@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 
 public class Q8 {
@@ -24,6 +25,7 @@ public class Q8 {
 		} else if (x > 0 && y < 0) {
 			System.out.println("(" + x + "," + y + ")" + " is in quadrant IV.");
 		}
+		input.close();
 
 	}
 

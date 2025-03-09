@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 import java.util.Scanner;
 public class HAQ1 {
 

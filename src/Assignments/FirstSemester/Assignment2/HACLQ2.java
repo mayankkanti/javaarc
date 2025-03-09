@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 public class HACLQ2 {	
 	public static void main(String[] args) {
 		int r = Integer.parseInt(args[0]);

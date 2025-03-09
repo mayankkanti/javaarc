@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q4 {
 
@@ -14,6 +15,7 @@ public class Q4 {
 			secondNum = temp;
 		}
 		System.out.print(firstNum);
+		input.close();
 	}
 }
 /*

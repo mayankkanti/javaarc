@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 
 public class GCD {
@@ -23,7 +24,7 @@ public class GCD {
 		}
 
 		System.out.println("The GCD of the numbers " + num1 + " and " + num2 + " is " + dividend);
-
+		sc.close();
 	}
 
 }

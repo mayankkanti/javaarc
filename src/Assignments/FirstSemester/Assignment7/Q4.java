@@ -20,6 +20,7 @@ public class Q4 {
 			arr[i] = sc.nextDouble();
 		}
 		System.out.println("The smallest element in the list is "+min(arr));
+		sc.close();
 	}
 
 }

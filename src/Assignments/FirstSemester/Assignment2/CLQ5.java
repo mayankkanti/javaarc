@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment2;
+
 /*
  * Write a java program that takes three int values from the command line and prints them in 
 ascending order. Use Math.min() and Math.max().

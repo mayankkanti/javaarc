@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 
 public class Q2 {
@@ -6,10 +7,11 @@ public class Q2 {
 		System.out.println("Enter the amount of water (in ml) Alice drank today: ");
 		int ml = input.nextInt();
 		if (ml >= 5000) {
-			System.out.println("Yes, Alice is following doctor’s advice");
+			System.out.println("Yes, Alice is following doctorï¿½s advice");
 		} else {
-			System.out.println("No, Alice is not following doctor’s advice");
+			System.out.println("No, Alice is not following doctorï¿½s advice");
 		}
+		input.close();
 	}
 }   
 
@@ -17,6 +19,6 @@ public class Q2 {
 /*
  * Enter the amount of water (in ml) Alice drank today: 
  * 5500 
- * Yes, Alice is following doctor’s advice
+ * Yes, Alice is following doctorï¿½s advice
  */
  

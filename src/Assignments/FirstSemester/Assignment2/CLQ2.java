@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 public class CLQ2 {
 
 	public static void main(String[] args) {

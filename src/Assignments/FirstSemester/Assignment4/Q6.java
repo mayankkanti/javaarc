@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q6 {
 
@@ -13,6 +14,7 @@ public class Q6 {
 			System.out.println(sum);
 		}
 		System.out.print(base+" to the power "+power+" is: "+sum);
+		input.close();
 	}
 
 }

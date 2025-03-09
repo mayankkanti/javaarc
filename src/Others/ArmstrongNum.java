@@ -1,3 +1,5 @@
+package Others;
+
 import java.util.Scanner;
 public class ArmstrongNum {
 
@@ -24,6 +26,7 @@ public class ArmstrongNum {
 		} else {
 			System.out.println("No the number is not Armstrong Number.");
 		}
+		sc.close();
 	}
 
 }

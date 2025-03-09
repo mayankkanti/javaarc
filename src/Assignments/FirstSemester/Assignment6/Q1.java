@@ -46,7 +46,7 @@ public class Q1 {
 		Scanner sc = new Scanner(System.in);
 		// taking 0 - addition, 1 - subtraction, 2 - multiplication, 3 - division, 4 -
 		// remainder, 5 - Square root
-		int[] options = { 0, 1, 2, 3, 4, 5 };
+
 		int n;
 		do {
 			System.out.println("Calculator Functions: ");

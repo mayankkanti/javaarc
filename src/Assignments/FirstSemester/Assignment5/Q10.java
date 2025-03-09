@@ -18,7 +18,7 @@ public class Q10 {
 			b = c;
 			c = temp;
 		}
-
+		sc.close();
 	}
 
 }

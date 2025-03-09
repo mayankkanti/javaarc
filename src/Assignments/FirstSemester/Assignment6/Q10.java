@@ -62,7 +62,7 @@ public class Q10 {
 		default:
 			System.out.println("WRONG INPUT");
 		}
-
+		sc.close();
 	}
 
 }

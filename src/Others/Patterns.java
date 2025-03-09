@@ -1,3 +1,4 @@
+package Others;
 public class Patterns {
 	static void pattern1(int rows) {
 		System.out.println("Pattern 1");

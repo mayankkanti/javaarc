@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 public class Q1 {
 	public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class Q1 {
 		if (age >= 18) {
 			System.out.println("You are eligible to cast your vote.");
 		}
+		input.close();
 	}
 }
 /* 

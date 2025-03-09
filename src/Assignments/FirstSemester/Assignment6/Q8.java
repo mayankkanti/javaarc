@@ -19,7 +19,7 @@ public class Q8 {
 		System.out.print("Enter a string: ");
 		String userinput = sc.nextLine();
 		System.out.println("Is the inputted String a palindrome? "+isPalindrome(userinput));
-
+		sc.close();
 	}
 
 }

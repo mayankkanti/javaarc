@@ -7,6 +7,7 @@ public class HAQ3 {
 		System.out.print("Enter a string: ");
 		String user = sc.nextLine();
 		System.out.println("The middle character in the string: "+user.charAt((user.length()/2)));
+		sc.close();
 	}
 
 }

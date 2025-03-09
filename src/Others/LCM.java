@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 
 public class LCM {
@@ -18,7 +19,7 @@ public class LCM {
 			}
 			lcm++;
 		}
-
+		sc.close();
 	}
 
 }

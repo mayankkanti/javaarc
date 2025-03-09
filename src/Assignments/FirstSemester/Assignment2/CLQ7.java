@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment2;
+
 /*Write a java program that takes three positive integers from command-line arguments and
 prints true if any one of them is less than or equal to the product of the other two and false
 otherwise.*/

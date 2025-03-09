@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 public class ArmstrongNumInRange {
 	static boolean isArmstrong(int num) {
@@ -30,6 +31,7 @@ public class ArmstrongNumInRange {
 				System.out.println(num);
 			}
 		}
+		sc.close();
 	}
 
 }

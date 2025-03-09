@@ -28,6 +28,7 @@ public class HAQ4 {
 			wordcount++;
 		}
 		System.out.println("Word Count = " + wordcount);
+		sc.close();
 	}
 
 }

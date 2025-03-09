@@ -32,7 +32,7 @@ public class Q3 {
 		}
 		System.out.println("Reversed Number: "+reverse(n));
 		System.out.println("Is the number palindrome? "+isPalindrome(n));
-
+		sc.close();
 	}
 
 }

@@ -1,4 +1,4 @@
-
+package Assignments.FirstSemester.Assignment2;
 /*
  * Author's Name: Mayank Kanti Mehta
  * Author's Redg No: 
@@ -21,6 +21,7 @@ public class Q3 {
 		System.out.println("Your HRA (40%) is "+HRA);
 		System.out.println("Your DA (20%) is "+DA);
 		System.out.println("Your Gross Salary is "+Gsalary);
+		sc.close();
 	}
 }
 /*

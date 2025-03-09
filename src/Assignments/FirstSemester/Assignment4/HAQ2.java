@@ -1,4 +1,4 @@
-
+package Assignments.FirstSemester.Assignment4;
 public class HAQ2 {
 
 	public static void main(String[] args) {

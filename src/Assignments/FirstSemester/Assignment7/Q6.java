@@ -35,6 +35,7 @@ public class Q6 {
 			System.out.print(arr[i]+(i==arr.length-1?"]":", "));
 		}
 		System.out.println();
+		sc.close();
 	}
 
 }

@@ -18,6 +18,7 @@ public class HAQ5 {
 		System.out.print("Input the third number: ");
 		int third = sc.nextInt();
 		System.out.println("Whether the three said numbers are consecutive or not?:"+isConsecutive(first, second, third));
+		sc.close();
 	}
 
 }

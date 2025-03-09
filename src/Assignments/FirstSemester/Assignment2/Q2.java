@@ -1,4 +1,4 @@
-
+package Assignments.FirstSemester.Assignment2;
 /*
  * Author's Name: Mayank Kanti Mehta
  * Author's Redg No: 
@@ -24,6 +24,7 @@ public class Q2 {
 		System.out.println("The distance b/w the cities in feets is "+feet);
 		System.out.println("The distance b/w the cities in inches is "+inch);
 		System.out.println("The distance b/w the cities in centimeters is "+cm);
+		sc.close();
 	}
 }
 /* Output:

@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q8 {
 
@@ -22,7 +23,7 @@ public class Q8 {
 				System.out.println("Too low, try again");
 			}
 		}
-
+		input.close();
 	}
 
 }

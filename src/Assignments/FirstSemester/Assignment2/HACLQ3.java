@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 /*Write a java program to input a four-digit number from command line argument and find sum
 of the first and last digit of the number*/
 public class HACLQ3 {

@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q5 {
 
@@ -16,6 +17,7 @@ public class Q5 {
 		} else {
 			System.out.println(n+" is not a prefect number.");
 		}
+		input.close();
 	}
 }
 /*

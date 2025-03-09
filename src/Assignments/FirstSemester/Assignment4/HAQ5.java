@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 
 public class HAQ5 {
@@ -15,5 +16,6 @@ public class HAQ5 {
 				System.out.println(s);
 			}
 		}
+		sc.close();
 	}
 }

@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 
 public class PalindromeNum {
@@ -17,6 +18,7 @@ public class PalindromeNum {
 		} else {
 			System.out.println("No, the number is not a palindrome number.");
 		}
+		sc.close();
 	}
 
 }

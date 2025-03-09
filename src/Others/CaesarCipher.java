@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 
 public class CaesarCipher {
@@ -45,7 +46,7 @@ public class CaesarCipher {
 		int shift = sc.nextInt();
 		System.out.println("Encrypted Text: "+encrypter(shift, text));
 		System.out.println("Decrypted Text: "+decrypter(shift, encrypter(shift, text)));
-
+		sc.close();
 	}
 
 }

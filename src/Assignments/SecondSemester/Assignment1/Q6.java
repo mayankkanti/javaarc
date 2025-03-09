@@ -4,7 +4,7 @@ package Assignments.SecondSemester.Assignment1;
 // as follows.
 
 
-package lab_assignments;
+
 import java.util.Scanner;
 
 

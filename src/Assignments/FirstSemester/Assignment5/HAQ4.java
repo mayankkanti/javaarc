@@ -35,7 +35,7 @@ public class HAQ4 {
 		System.out.println("Calculated result: "+sum);
 		System.out.println("System result: "+Math.cos(x));
 		
-		
+		sc.close();
 	}
 
 }

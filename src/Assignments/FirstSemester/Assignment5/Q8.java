@@ -15,6 +15,7 @@ public class Q8 {
 			sum += termsum;
 		}
 		System.out.println("The Sum is :" + sum);
+		sc.close();
 	}
 }
 

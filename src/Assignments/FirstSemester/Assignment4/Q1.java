@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q1 {
 	public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Q1 {
 		}
 		System.out.println();
 		System.out.println("The sum of number displayed is "+sum);
+		input.close();
 	}
 }
 /*

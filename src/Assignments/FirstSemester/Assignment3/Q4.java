@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 public class Q4 {
 
@@ -15,6 +16,7 @@ public class Q4 {
 		} else {
 			System.out.println("You got it wrong");
 		}
+		input.close();
 
 	}
 

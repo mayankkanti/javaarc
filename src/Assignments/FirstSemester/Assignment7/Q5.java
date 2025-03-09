@@ -37,7 +37,7 @@ public class Q5 {
 		}
 		
 		System.out.println("The 2nd biggest element in the list is "+secondbiggest);
-
+		sc.close();
 	}
 
 }

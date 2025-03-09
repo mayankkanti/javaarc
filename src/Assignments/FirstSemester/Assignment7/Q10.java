@@ -53,6 +53,7 @@ public class Q10 {
 			System.out.print(result_arr[i] + (i == result_arr.length - 1 ? "]" : ", "));
 		}
 		System.out.println();
+		sc.close();
 	}
 
 }

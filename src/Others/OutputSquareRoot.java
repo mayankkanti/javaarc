@@ -1,4 +1,5 @@
 // Print the square root of the number. Exit the program if 0 is entered.
+package Others;
 import java.util.Scanner;
 public class OutputSquareRoot {
 	public static void main(String[] args) {
@@ -14,5 +15,6 @@ public class OutputSquareRoot {
 				System.out.println("Square Root: "+Math.sqrt(num));
 			}
 		}
+		input.close();
 	}
 }

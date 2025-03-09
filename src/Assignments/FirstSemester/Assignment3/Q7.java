@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 
 public class Q7 {

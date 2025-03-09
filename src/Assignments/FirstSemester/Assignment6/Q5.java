@@ -12,6 +12,7 @@ public class Q5 {
 		System.out.print("Enter the length of each side: ");
 		double lside = sc.nextDouble();
 		System.out.println("The area of a polygon of "+nsides+" with length "+lside+" is "+area(nsides, lside));
+		sc.close();
 	}
 
 }

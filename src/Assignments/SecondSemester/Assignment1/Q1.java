@@ -1,5 +1,5 @@
 package Assignments.SecondSemester.Assignment1;
-package lab_assignments;
+
 
 public class Q1 {
 

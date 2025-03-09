@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 
 public class Q2 {
@@ -18,6 +19,7 @@ public class Q2 {
 		} else {
 			System.out.println("The number " + num + " is not divisible by 9");
 		}
+		input.close();
 	}
 }
 /*

@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment2;
+
 /* Write a java program that takes two int values from the command line as dividend and divisor 
 and print the quotient and remainder */
 public class CLQ1 {

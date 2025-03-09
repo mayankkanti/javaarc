@@ -26,7 +26,7 @@ public class Q9 {
 
 		double deviation = Math.sqrt((numerator / (n - 1)));
 		System.out.println("The standard deviation is " + deviation);
-
+		sc.close();
 	}
 
 }

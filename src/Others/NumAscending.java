@@ -1,4 +1,5 @@
 // Questions: To Check if the digits of the given numbers are in ascending order. 
+package Others;
 import java.util.Scanner;
 public class NumAscending {
 
@@ -27,6 +28,7 @@ public class NumAscending {
 		if (q==0) {
 			System.out.println("Ascending");
 		}
+		input.close();
 	}
 
 }

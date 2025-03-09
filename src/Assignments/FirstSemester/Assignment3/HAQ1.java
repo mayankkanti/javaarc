@@ -1,3 +1,5 @@
+package Assignments.FirstSemester.Assignment3;
+
 import java.util.Scanner;
 
 public class HAQ1 {
@@ -24,6 +26,7 @@ public class HAQ1 {
 		} else {
 			System.out.println(computer + user + ". You lost.");
 		}
+		input.close();
 
 	}
 }

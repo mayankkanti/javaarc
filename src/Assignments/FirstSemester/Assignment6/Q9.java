@@ -38,6 +38,7 @@ public class Q9 {
 		} else {
 			System.out.println("Invaild Password");
 		}
+		sc.close();
 	}
 
 }

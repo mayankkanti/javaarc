@@ -20,7 +20,7 @@ public class Q2 {
 				System.out.println(i+" occurs "+arr[i]+(arr[i]>1?" times.":" time."));
 			}
 		}
-
+		sc.close();
 	}
 
 }

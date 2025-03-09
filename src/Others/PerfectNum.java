@@ -1,3 +1,4 @@
+package Others;
 import java.util.Scanner;
 public class PerfectNum {
 
@@ -16,7 +17,7 @@ public class PerfectNum {
 			System.out.println("No the number is not a perfect number.");
 		}
 		
-
+		sc.close();
 	}
 
 }

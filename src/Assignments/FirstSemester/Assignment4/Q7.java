@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment4;
 import java.util.Scanner;
 public class Q7 {
 
@@ -9,6 +10,7 @@ public class Q7 {
 		for (int i=1;i<=10;i++) {
 			System.out.println(base+"x"+i+"="+base*i);
 		}
+		input.close();
 	}
 
 }

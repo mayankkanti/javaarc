@@ -1,5 +1,5 @@
 package Assignments.SecondSemester.Assignment1;
-package lab_assignments;
+
 
 public class Q9 {
     public static double sumMajorDiagonal(double[][] m){

@@ -46,7 +46,7 @@ public class Q12 {
 			System.out.print(sorted_arr[i] + (i == sorted_arr.length - 1 ? "]" : ", "));
 		}
 		System.out.println();
-
+		sc.close();
 	}
 
 }

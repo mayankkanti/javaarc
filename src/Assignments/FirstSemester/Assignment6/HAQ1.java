@@ -31,7 +31,7 @@ public class HAQ1 {
 		if (notfound) {
 			System.out.println("There are no non-repeated character in the inputted string.");
 		}
-
+		sc.close();
 	}
 
 }

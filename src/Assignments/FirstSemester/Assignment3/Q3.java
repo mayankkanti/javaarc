@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
 
 public class Q3 {
@@ -17,6 +18,7 @@ public class Q3 {
         } else {
             System.out.println("Neither increasing nor decreasing order");
         }
+		input.close();
 	}
 }
 

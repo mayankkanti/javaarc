@@ -1,4 +1,5 @@
- import java.util.Scanner;
+package Assignments.FirstSemester.Assignment3;
+import java.util.Scanner;
 public class Q5 {
 
 	public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class Q5 {
 		else {
 			System.out.println(userinput+" is a leap year: false");
 		}
+		input.close();
 	}
 
 }

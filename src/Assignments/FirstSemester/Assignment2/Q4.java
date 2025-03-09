@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 /*
  * Author's Name: Mayank
  * Author's Redg No: 
@@ -20,6 +21,7 @@ public class Q4 {
 		firstdig = temp / 10; // here 3
 		sum = firstdig + middledig + lastdig; // adding 3+5+3=11
 		System.out.println("The sum of the digits entered is "+sum);
+		sc.close();
 	}
 }
 /*

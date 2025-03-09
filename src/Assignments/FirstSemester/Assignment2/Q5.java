@@ -1,3 +1,4 @@
+package Assignments.FirstSemester.Assignment2;
 /*
 Author's Name: Mayank Kanti Mehta
 Author's Redg no: 
@@ -19,6 +20,7 @@ public class Q5 {
 		volume = (2.0/3) * Math.PI * Math.pow(radius, 3);
 		System.out.println("The Surface Area of the Sphere: " + surfArea);
 		System.out.println("The Volume of the Sphere: " + volume);
+		sc.close();
 	}
 }
 

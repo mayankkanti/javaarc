@@ -1,5 +1,5 @@
+package Assignments.FirstSemester.Assignment3;
 import java.util.Scanner;
-
 public class Q6 {
 
 	public static void main(String[] args) {
@@ -23,6 +23,7 @@ public class Q6 {
 			System.out.println(
 					"Your Monthly Electric Bill is " + bill);
 		}
+		input.close();
 	}                                                      
 
 }
