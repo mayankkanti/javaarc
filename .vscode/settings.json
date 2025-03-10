@@ -1,5 +1,5 @@
 {
-    "java.project.sourcePaths": ["src/Assignments/FirstSemester/Assignment2", "src/Assignments/FirstSemester/Assignment3", "src/Assignments/FirstSemester/Assignment4", "src/Assignments/FirstSemester/Assignment5", "src/Assignments/FirstSemester/Assignment6", "src/Assignments/FirstSemester/Assignment7", "src/Others"],
+    "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
