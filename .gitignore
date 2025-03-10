@@ -38,3 +38,8 @@ out/
 
 # Windows specific files
 Thumbs.db
+
+
+# Others
+.prettierrc
+Practice/
