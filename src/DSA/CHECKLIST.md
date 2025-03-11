@@ -114,7 +114,7 @@
 - Basic array and binary search tree concepts
 
 #### Topics
-- [ ] Linear Search
+- [X] Linear Search
 - [ ] Binary Search
 - [ ] Search problems
 
