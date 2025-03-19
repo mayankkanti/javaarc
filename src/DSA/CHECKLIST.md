@@ -27,7 +27,7 @@
 - Operations on arrays (insertion, deletion, traversal)
 
 #### Topics
-- [ ] Introduction to Arrays
+- [X] Introduction to Arrays
 - [ ] Array operations (insertion, deletion, traversal)
 - [ ] Array-based problems
 
@@ -115,7 +115,7 @@
 
 #### Topics
 - [X] Linear Search
-- [ ] Binary Search
+- [X] Binary Search
 - [ ] Search problems
 
 ### Hashing
