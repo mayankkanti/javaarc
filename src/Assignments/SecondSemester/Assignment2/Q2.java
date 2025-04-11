@@ -1,51 +1,40 @@
 package Assignments.SecondSemester.Assignment2;
 
-import java.util.Scanner;
 class Complex{
-	double real;
-	double img;
-	
-	void setData() {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter real part: ");
-		this.real = sc.nextDouble();
-		System.out.print("Enter img part: ");
-		this.img = sc.nextDouble();
-		sc.close();
-	}
-	
-	void display() {
-		System.out.println(real + "+" + img+"i");;
-	}
-	
-	public Complex add (Complex c1, Complex c2) {
-		Complex c = new Complex();
-		c.real = c1.real + c2.real;
-		c.img = c1.img + c2.img;
-		return c;	
-	}
-	
+    double real, img;
+    void setDetails(double real, double img) {
+        this.real = real;
+        this.img = img;
+    }
+
+    void displayDetails() {
+        System.out.println(img+"i+"+real);
+    }
+
+    public Complex add(Complex c) {
+        Complex result = new Complex();
+        result.real = this.real + c.real;
+        result.img = this.img + c.img;
+        return result;
+    }
 }
 
-
 public class Q2 {
+    public static void main(String[] args) {
+        Complex c1 = new Complex();
+        Complex c2 = new Complex();
+        Complex c3 = new Complex();
 
-	public static void main(String[] args) {
-		
-		Complex c1 = new Complex();
-		
-		c1.setData();
-		Complex c2 = new Complex();
-		c2.setData();
-		System.out.println("Complex No1:");
-		c1.display();
-		System.out.println("Complex No2:");
-		c2.display();
-		
-		System.out.println("Added Complex: ");
-		Complex c = c1.add(c1, c2);
-		c.display();
+        c1.setDetails(2.5, 3.5);
+        c2.setDetails(4.5, 5.5);
 
-	}
+        System.out.println("Complex Number 1: ");
+        c1.displayDetails();
+        System.out.println("Complex Number 2: ");
+        c2.displayDetails();
 
+        c3 = c1.add(c2);
+        System.out.println("Sum of Complex Numbers: ");
+        c3.displayDetails();
+    }
 }
