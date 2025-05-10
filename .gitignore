@@ -22,6 +22,7 @@ hs_err_pid*
 .project
 .classpath
 .settings/
+.metadata/
 bin/
 
 # VS Code specific files
