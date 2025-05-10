@@ -13,6 +13,13 @@ class Node {
     }
 }
 
+
+// TODO
+// Sorting
+// Get Middle Node
+// Removing Duplicates
+// Merging
+
 class LinkedList {
     Node head;
 
@@ -170,6 +177,63 @@ class LinkedList {
         
     }
 
+    void updateByData(String target, String data){
+        if (head == null){
+            System.out.println("The List is Empty.");
+            return;
+        }
+        Node current = head;
+        int index = 0;
+        boolean found = false;
+        while (current.next != null){
+            if (current.data.equals(target)){
+                found = true;
+                current.data = data;
+                System.out.printf("Updated data at index %d from %s to %s \n", index, target, data);
+            }
+            current = current.next;
+            index++;
+        }
+        if (!found){
+            System.out.printf("No node found with data %s \n", target);
+        }
+    }
+
+    void reverse(){
+        if (head == null){
+            System.out.println("The List is Empty.");
+            return;
+        }
+
+        if (head.next == null){
+            System.out.println("There's only one Node in the list.");
+            return;
+        }
+
+        Node previous = null;
+        Node current = head; 
+        while (current != null){
+            Node next = current.next;
+            current.next = previous;  
+            previous = current;
+            current = next; 
+        }
+        head = previous;
+    }
+    
+    int len() {
+        if (head == null){
+            return 0;
+        }
+        Node current = head;
+        int size = 0;
+        while (current != null) {
+            current = current.next;
+            size++;
+        }
+        return size;
+    }
+
     void displayList() {
         Node current = head;
         System.out.println("Current Linked List: ");
@@ -233,7 +297,12 @@ public class SinglyLinkedList {
     static void updateOperations(LinkedList list, int OperationDelay) throws InterruptedException{
         System.out.println("Updating data at index 2 to 55");
         Thread.sleep(OperationDelay);
-        list.updateByIndex(2, "55");
+        list.updateByIndex(2, "12");
+        list.displayList();
+
+        System.out.println("Updating all nodes with data 12 to 22");
+        Thread.sleep(OperationDelay);
+        list.updateByData("12", "22");
         list.displayList();
     }
     public static void main(String[] args) {
@@ -251,11 +320,19 @@ public class SinglyLinkedList {
                 list.insertAtEnd(Integer.toString(random.nextInt(20)));
             }
             list.displayList();
-
-            // insertOperations(list, OperationDelay);
-            // deleteOperations(list, OperationDelay);
-            // searchOperations(list, OperationDelay);
+            
+            insertOperations(list, OperationDelay);
+            deleteOperations(list, OperationDelay);
+            searchOperations(list, OperationDelay);
             updateOperations(list, OperationDelay);
+
+            System.out.println("Reversing the List.");
+            Thread.sleep(OperationDelay);
+            list.reverse();
+            list.displayList();
+            
+            System.out.println("Length Of the List: ");
+            System.out.println(list.len());
 
         } catch (InterruptedException e) {
             e.printStackTrace();
