@@ -1,5 +1,7 @@
 package Assignments.SecondSemester.Assignment2;
 
+import java.util.Scanner;
+
 class Book{
     int bookID, quantity;
     double price;
@@ -26,32 +28,21 @@ class Book{
 
 public class Q3 {
     public static void main(String[] args) {
-        // 5 books
-        Book b1 = new Book(101, 2, 500.0);
-        Book b2 = new Book(102, 3, 300.0);
-        Book b3 = new Book(103, 1, 700.0);
-        Book b4 = new Book(104, 4, 200.0);
-        Book b5 = new Book(105, 5, 100.0);
+        Scanner sc = new Scanner(System.in);
+        // Object Arr
+        Book[] books = new Book[5];
 
-        // Display details of each book
-        System.out.println("Book 1 Details: ");
-        b1.displayDetails();
-        System.out.println("Total Price: " + b1.total());
-        System.out.println("Book 2 Details: ");
-        b2.displayDetails();
-        System.out.println("Total Price: " + b2.total());
-        System.out.println("Book 3 Details: ");
-        b3.displayDetails();
-        System.out.println("Total Price: " + b3.total());
-        System.out.println("Book 4 Details: ");
-        b4.displayDetails();
-        System.out.println("Total Price: " + b4.total());
-        System.out.println("Book 5 Details: ");
-        b5.displayDetails();
-        System.out.println("Total Price: " + b5.total());
-
+        for(int i = 0; i < books.length; i++) {
+            // Create a new book object with sample data
+            System.out.print("Enter Quantity & Price: ");
+            int quantity = sc.nextInt();
+            double price = sc.nextDouble();
+            books[i] = new Book(i + 1,quantity, price);
+            books[i].displayDetails();
+        }
 
         // Display total price of all books
         System.out.println("Total Price of all books: " + Book.total_price);
+        sc.close();
     }
 }
