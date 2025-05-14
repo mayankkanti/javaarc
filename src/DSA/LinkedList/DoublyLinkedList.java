@@ -104,6 +104,47 @@ class DoublyList{
         }
         previous.next = current.next;
     }
+
+    void deleteByData(String target) {
+        if (head == null) {
+            System.out.println("The list is empty.");
+            return;
+        }
+
+        NodeDouble current = head;
+        NodeDouble previous = head.prev;
+        int index = 0;
+        boolean found = false;
+
+        while (current!=null){
+            NodeDouble next = current.next; 
+            if (current.data.equals(target)){
+                if (previous == null){
+                    // this is if the target is found at head
+                    head = next;
+                    head.prev = null;
+                } else if(next == null){
+                    // this is if the target is found at end
+                    previous.next = null; 
+                } else{
+                    // elsewhere
+                    previous.next = next;
+                    next.prev = previous;
+                }
+                found = true;
+                System.out.printf("Data %s deleted at index %d \n", target, index);
+            }
+            
+            previous = current;
+            current = current.next;
+            index++;
+        }
+
+        if(!found){
+            System.out.printf("No data with values %s was found. \n", target);
+        }
+
+    }
     
     void displayList() {
         NodeDouble current = head;
@@ -128,14 +169,12 @@ public class DoublyLinkedList {
             for (int i = 0; i < 5; i++){
                 list.insertAtEnd(Integer.toString(random.nextInt(20)));
             }
+            list.insertAtIndex(2, "12");
+            list.insertAtIndex(4, "12");
+            list.insertAtEnd("12");
             list.displayList();
-            list.insertAtIndex(2, "69");
-            list.displayList();
-            list.deleteAtBeginning();
-            list.displayList();
-            list.deleteAtEnd();
-            list.displayList();
-            list.deleteAtIndex(1);
+
+            list.deleteByData("12");
             list.displayList();
             
 
