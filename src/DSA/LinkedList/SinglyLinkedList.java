@@ -123,7 +123,7 @@ class SinglyList {
             System.out.println("The List is Empty.");
             return;
         }
-        
+
         NodeSingle current = head;
         NodeSingle previous = null;
         boolean found = false;
@@ -137,8 +137,7 @@ class SinglyList {
                     previous.next = current.next;
                 }
                 found = true;
-                System.out.printf("Data %s deleted at index %d", target, index);
-                break;
+                System.out.printf("Data %s deleted at index %d \n", target, index);
             }
             previous = current;
             current = current.next;
@@ -203,7 +202,7 @@ class SinglyList {
             }
             current = current.next;
         }
-        System.out.printf("Update data at index %d from %s to %s \n", index, current.data, data);
+        System.out.printf("Updated data at index %d from %s to %s \n", index, current.data, data);
         current.data = data;
         
     }
@@ -311,6 +310,11 @@ public class SinglyLinkedList {
         Thread.sleep(OperationDelay);
         list.deleteAtIndex(2);
         list.displayList();
+
+        System.out.println("Deleting Node With Data 22. \n");
+        Thread.sleep(OperationDelay);
+        list.deleteByData("22");
+        list.displayList();
     }
 
     static void searchOperations(SinglyList list, int OperationDelay) throws InterruptedException{
@@ -328,7 +332,7 @@ public class SinglyLinkedList {
     static void updateOperations(SinglyList list, int OperationDelay) throws InterruptedException{
         System.out.println("Updating data at index 2 to 55");
         Thread.sleep(OperationDelay);
-        list.updateByIndex(2, "12");
+        list.updateByIndex(2, "55");
         list.displayList();
 
         System.out.println("Updating all nodes with data 12 to 22");
@@ -352,23 +356,17 @@ public class SinglyLinkedList {
             }
             list.displayList();
             
-            // insertOperations(list, OperationDelay);
-            // deleteOperations(list, OperationDelay);
-            // searchOperations(list, OperationDelay);
-            // updateOperations(list, OperationDelay);
-
-            // System.out.println("Reversing the List.");
-            // Thread.sleep(OperationDelay);
-            // list.reverse();
-            // list.displayList();
-            list.insertAtBeginning("22");
-            // list.insertAtEnd("22");
-            list.displayList();
-
-            list.deleteByData("22");
-
-            list.displayList();
+            insertOperations(list, OperationDelay);
+            deleteOperations(list, OperationDelay);
+            searchOperations(list, OperationDelay);
+            updateOperations(list, OperationDelay);
             
+
+            // Other Operations
+            System.out.println("Reversing the List.");
+            Thread.sleep(OperationDelay);
+            list.reverse();
+            list.displayList();            
             System.out.println("Length Of the List: ");
             System.out.println(list.len());
 
