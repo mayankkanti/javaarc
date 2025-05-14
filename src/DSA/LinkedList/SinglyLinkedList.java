@@ -123,7 +123,7 @@ class SinglyList {
             System.out.println("The List is Empty.");
             return;
         }
-
+        
         NodeSingle current = head;
         NodeSingle previous = null;
         boolean found = false;
@@ -131,7 +131,11 @@ class SinglyList {
 
         while(current!=null){
             if (current.data.equals(target)){
-                previous.next = current.next;
+                if (previous == null){
+                    head = current.next;
+                } else{
+                    previous.next = current.next;
+                }
                 found = true;
                 System.out.printf("Data %s deleted at index %d", target, index);
                 break;
