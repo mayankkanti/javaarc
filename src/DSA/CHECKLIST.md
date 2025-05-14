@@ -28,8 +28,8 @@
 
 #### Topics
 - [X] Introduction to Arrays
-- [ ] Array operations (insertion, deletion, traversal)
-- [ ] Array-based problems
+- [X] Array operations (insertion, deletion, traversal)
+- [X] Array-based problems
 
 ### Linked Lists
 #### Required Knowledge
@@ -37,8 +37,8 @@
 - Basic array concepts
 
 #### Topics
-- [ ] Introduction to Linked Lists
-- [ ] Singly Linked List
+- [X] Introduction to Linked Lists
+- [X] Singly Linked List
 - [ ] Doubly Linked List
 - [ ] Circular Linked List
 - [ ] Linked List operations (insertion, deletion, traversal)
