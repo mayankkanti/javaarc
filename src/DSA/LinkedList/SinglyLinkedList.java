@@ -3,28 +3,28 @@ package DSA.LinkedList;
 import java.lang.Thread;
 import java.util.Random;
 
-class Node {
+class NodeSingle {
     String data;
-    Node next;
+    NodeSingle next;
     
-    Node(String data) {
+    NodeSingle(String data) {
         this.data = data;
         this.next = null;
     }
 }
 
 
-// TODO
+// TO-DO (what? https://cdn.imgchest.com/files/yd5ceola3p4.png)
 // Sorting
 // Get Middle Node
 // Removing Duplicates
 // Merging
 
-class LinkedList {
-    Node head;
+class SinglyList {
+    NodeSingle head;
 
     void insertAtBeginning(String data){
-        Node newNode = new Node(data);
+        NodeSingle newNode = new NodeSingle(data);
         if (head == null){
             head = newNode;
             return;
@@ -34,13 +34,13 @@ class LinkedList {
     }
 
     void insertAtEnd(String data) {
-        Node newNode = new Node(data);
+        NodeSingle newNode = new NodeSingle(data);
         if (head == null){
             head = newNode;
             return;
         }
 
-        Node current = head;
+        NodeSingle current = head;
         while (current.next != null) {
             current = current.next;
         }
@@ -49,13 +49,13 @@ class LinkedList {
     }
 
     void insertAtIndex(int index, String data){
-        Node newNode = new Node(data);
+        NodeSingle newNode = new NodeSingle(data);
         if (index == 0){
             insertAtBeginning(data);
             return;
         }
-        Node current = head;
-        Node previous = null;
+        NodeSingle current = head;
+        NodeSingle previous = null;
         for(int i = 0; i < index; i++){
             if (current == null){
                 System.out.println("Index out of bounds.");
@@ -85,8 +85,8 @@ class LinkedList {
             return;
         }
 
-        Node current = head;
-        Node previous = null;
+        NodeSingle current = head;
+        NodeSingle previous = null;
         while (current.next != null){
             previous = current;
             current = current.next;
@@ -102,8 +102,8 @@ class LinkedList {
             return;
         }
 
-        Node current = head;
-        Node previous = null;
+        NodeSingle current = head;
+        NodeSingle previous = null;
 
         for(int i = 0; i < index; i++){
             if (current == null){
@@ -118,13 +118,40 @@ class LinkedList {
         previous.next = current.next;
     }
     
+    void deleteByData(String target) {
+        if (head == null){
+            System.out.println("The List is Empty.");
+            return;
+        }
+
+        NodeSingle current = head;
+        NodeSingle previous = null;
+        boolean found = false;
+        int index = 0;
+
+        while(current!=null){
+            if (current.data.equals(target)){
+                previous.next = current.next;
+                found = true;
+                System.out.printf("Data %s deleted at index %d", target, index);
+                break;
+            }
+            previous = current;
+            current = current.next;
+            index++;
+        }
+        if (!found){
+            System.out.println("Data not found.");
+        }
+    }
+    
     void searchByData(String data) {
         if (head == null){
             System.out.println("The List is Empty.");
             return;
         }
 
-        Node current = head;
+        NodeSingle current = head;
         int index = 0;
         boolean found = false;
 
@@ -147,7 +174,7 @@ class LinkedList {
             System.out.println("The List is Empty.");
             return;
         }
-        Node current = head;
+        NodeSingle current = head;
         for (int i = 0; i < index; i++){
             if (current == null){
                 System.out.println("Index out of bounds.");
@@ -164,7 +191,7 @@ class LinkedList {
             System.out.println("The List is Empty.");
             return;
         }
-        Node current = head;
+        NodeSingle current = head;
         for (int i = 0; i < index; i++){
             if (current.next == null){
                 System.out.println("Index out of bounds.");
@@ -182,7 +209,7 @@ class LinkedList {
             System.out.println("The List is Empty.");
             return;
         }
-        Node current = head;
+        NodeSingle current = head;
         int index = 0;
         boolean found = false;
         while (current.next != null){
@@ -210,10 +237,10 @@ class LinkedList {
             return;
         }
 
-        Node previous = null;
-        Node current = head; 
+        NodeSingle previous = null;
+        NodeSingle current = head; 
         while (current != null){
-            Node next = current.next;
+            NodeSingle next = current.next;
             current.next = previous;  
             previous = current;
             current = next; 
@@ -225,7 +252,7 @@ class LinkedList {
         if (head == null){
             return 0;
         }
-        Node current = head;
+        NodeSingle current = head;
         int size = 0;
         while (current != null) {
             current = current.next;
@@ -235,7 +262,7 @@ class LinkedList {
     }
 
     void displayList() {
-        Node current = head;
+        NodeSingle current = head;
         System.out.println("Current Linked List: ");
         while(current.next != null){
             System.out.print(current.data + " > ");
@@ -248,7 +275,7 @@ class LinkedList {
 
 public class SinglyLinkedList {
 
-    static void insertOperations(LinkedList list, int OperationDelay) throws InterruptedException{
+    static void insertOperations(SinglyList list, int OperationDelay) throws InterruptedException{
         System.out.println("Inserting 10 at beginning. \n");
         Thread.sleep(OperationDelay);
         list.insertAtBeginning("10");
@@ -265,7 +292,7 @@ public class SinglyLinkedList {
         list.displayList();
     }
 
-    static void deleteOperations(LinkedList list, int OperationDelay) throws InterruptedException{
+    static void deleteOperations(SinglyList list, int OperationDelay) throws InterruptedException{
         System.out.println("Deleting Node at Beginning. \n");
         Thread.sleep(OperationDelay);
         list.deleteAtBeginning();
@@ -282,7 +309,7 @@ public class SinglyLinkedList {
         list.displayList();
     }
 
-    static void searchOperations(LinkedList list, int OperationDelay) throws InterruptedException{
+    static void searchOperations(SinglyList list, int OperationDelay) throws InterruptedException{
         System.out.println("Searching by data value 69");
         Thread.sleep(OperationDelay);
         list.searchByData("69");
@@ -294,7 +321,7 @@ public class SinglyLinkedList {
         list.displayList();
     }
     
-    static void updateOperations(LinkedList list, int OperationDelay) throws InterruptedException{
+    static void updateOperations(SinglyList list, int OperationDelay) throws InterruptedException{
         System.out.println("Updating data at index 2 to 55");
         Thread.sleep(OperationDelay);
         list.updateByIndex(2, "12");
@@ -312,7 +339,7 @@ public class SinglyLinkedList {
         int OperationDelay = 2500;
 
         try {
-            LinkedList list = new LinkedList();
+            SinglyList list = new SinglyList();
 
             System.out.println("Generating a Random Linked List. \n");
             Thread.sleep(OperationDelay);
@@ -321,14 +348,21 @@ public class SinglyLinkedList {
             }
             list.displayList();
             
-            insertOperations(list, OperationDelay);
-            deleteOperations(list, OperationDelay);
-            searchOperations(list, OperationDelay);
-            updateOperations(list, OperationDelay);
+            // insertOperations(list, OperationDelay);
+            // deleteOperations(list, OperationDelay);
+            // searchOperations(list, OperationDelay);
+            // updateOperations(list, OperationDelay);
 
-            System.out.println("Reversing the List.");
-            Thread.sleep(OperationDelay);
-            list.reverse();
+            // System.out.println("Reversing the List.");
+            // Thread.sleep(OperationDelay);
+            // list.reverse();
+            // list.displayList();
+            list.insertAtBeginning("22");
+            // list.insertAtEnd("22");
+            list.displayList();
+
+            list.deleteByData("22");
+
             list.displayList();
             
             System.out.println("Length Of the List: ");
