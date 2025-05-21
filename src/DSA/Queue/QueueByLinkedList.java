@@ -6,6 +6,9 @@ class Node <T> {
     Node(T data){
         this.data = data;
         next = null;
+
+
+        
     }
 }
 
@@ -61,6 +64,6 @@ class queuelist <T> {
     }
 }
 
-public class queue {
+public class QueueByLinkedList {
     
 }

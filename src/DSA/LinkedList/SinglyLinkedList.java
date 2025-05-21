@@ -251,6 +251,11 @@ class SinglyList {
         head = previous;
     }
     
+    void sort(){
+        // welp le me took string as data, how am i gonna sort this lol (will rewrite this later)
+        // ref Assignment 4 for sorting implementation > src\Assignments\SecondSemester\Assignment4\Q1.java
+    }
+
     int len() {
         if (head == null){
             return 0;

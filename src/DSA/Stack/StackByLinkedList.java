@@ -57,7 +57,7 @@ class stacklist <T> {
     }
 }
 
-public class stack {
+public class StackByLinkedList {
     public static void main(String[] args) {
         stacklist<Integer> stack = new stacklist<Integer>();
         while(true){
