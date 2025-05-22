@@ -15,10 +15,10 @@ class NodeSingle {
 
 
 // TO-DO (what? https://cdn.imgchest.com/files/yd5ceola3p4.png)
-// Sorting
-// Get Middle Node
-// Removing Duplicates
-// Merging
+// Sorting [x]
+// Get Middle Node []
+// Removing Duplicates []
+// Merging []
 
 class SinglyList {
     NodeSingle head;
