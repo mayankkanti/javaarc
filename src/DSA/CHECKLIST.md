@@ -39,9 +39,9 @@
 #### Topics
 - [X] Introduction to Linked Lists
 - [X] Singly Linked List
-- [ ] Doubly Linked List
+- [X] Doubly Linked List
 - [ ] Circular Linked List
-- [ ] Linked List operations (insertion, deletion, traversal)
+- [X] Linked List operations (insertion, deletion, traversal)
 - [ ] Linked List problems
 
 ### Stacks
@@ -49,9 +49,9 @@
 - Basic array and linked list concepts
 
 #### Topics
-- [ ] Introduction to Stacks
-- [ ] Stack operations (push, pop, peek)
-- [ ] Stack implementation (array-based, linked list-based)
+- [X] Introduction to Stacks
+- [X] Stack operations (push, pop, peek)
+- [X] Stack implementation (array-based, linked list-based)
 - [ ] Stack problems
 
 ### Queues
@@ -59,9 +59,9 @@
 - Basic array and linked list concepts
 
 #### Topics
-- [ ] Introduction to Queues
-- [ ] Queue operations (enqueue, dequeue, peek)
-- [ ] Queue implementation (array-based, linked list-based)
+- [X] Introduction to Queues
+- [X] Queue operations (enqueue, dequeue, peek)
+- [X] Queue implementation (array-based, linked list-based)
 - [ ] Circular Queue
 - [ ] Priority Queue
 - [ ] Queue problems
@@ -99,9 +99,9 @@
 - Basic array concepts
 
 #### Topics
-- [ ] Bubble Sort
-- [ ] Selection Sort
-- [ ] Insertion Sort
+- [X] Bubble Sort
+- [X] Selection Sort
+- [X] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Heap Sort
