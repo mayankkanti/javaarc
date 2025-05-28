@@ -17,17 +17,9 @@ public class Q1PART2 {
         System.out.print("Enter data to push: ");
         int data = input.nextInt();
         Node newNode = new Node(data);
-        if (top == null){
-            top = newNode;
-            return top;
-        }
-        Node current = top;
-        while (current.next != null){
-            current = current.next;
-        }
-        current.next = newNode;
-        System.out.printf("%d was pushed into the stack. \n", data);
-        return top;
+        newNode.next = top;
+        System.out.printf("%d was pushed into the stack.\n", data);
+        return newNode;
     }
 
     public static Node pop(Node top) {
@@ -61,7 +53,7 @@ public class Q1PART2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Node top = null;
-        boolean running = false;
+        boolean running = true;
 
         while (running) {
             System.out.println("**** MENU ****");
